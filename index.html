@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Learning Activity : Mathematics Packet Submission</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- CSS -->
+
+    <!-- JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <!-- JavaScript -->
+
+</head>
+
+<body>
+
+    <!--PART 1 Starting-->
+    <!-- <div class="part_1">
+        <div class="header">
+            <h5>Select the language you want.</h5>
+        </div>
+    </div> -->
+
+    <!-- Languages : start -->
+    <div class="languages">
+        <div class="container-st">
+            <h5>Select the language you want.</h5>
+            <div class="row">
+                <button id="ENGLISH" class="btn lang-btn btn-mod btn-border btn-circle btn-medium">English</button>
+                <button id="SPANISH" class="btn lang-btn btn-mod btn-border btn-circle btn-medium">Spanish</button>
+                <button id="ARABIC" class="btn lang-btn btn-mod btn-border btn-circle btn-medium">Arabic</button>
+                <button id="PASHTO" class="btn lang-btn btn-mod btn-border btn-circle btn-medium">Pashto</button>
+                <button id="FARSI" class="btn lang-btn btn-mod btn-border btn-circle btn-medium">Farsi</button>
+                <button id="RUSSIAN" class="btn lang-btn btn-mod btn-border btn-circle btn-medium">Russian</button>
+                <button id="UKRANIAN" class="btn lang-btn btn-mod btn-border btn-circle btn-medium">Ukranian</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- PART 1 END  -->
+
+
+    <!-- PART 2 Starting -->
+    <div id="secondDiv" style="display: none;">
+        <p id="clickedButton"></p>
+    </div>
+
+    <div class="part_2" id="part_2" style="display: none;">
+        <div class="header">
+            <h5>Complete every task on this list by the end of the Check-In routine. Once a task is
+                completed, write a checkmark (☑️) inside the corresponding square.</h5>
+        </div>
+
+        <div id="checkboxes1">
+
+        <div> <input type="checkbox" class="checkbox" value="Checkbox 1" id="checkbox1" onchange="toggleDiv()" />
+            <span> Checkbox 1</span>
+        </div>
+        <div> <input type="checkbox" class="checkbox" value="Checkbox 2" id="checkbox2" onchange="toggleDiv()" />
+            <span> Checkbox 2</span>
+        </div>
+        <div> <input type="checkbox" class="checkbox" value="Checkbox 3" id="checkbox3" onchange="toggleDiv()" />
+            <span> Checkbox 3</span>
+        </div>
+        <div> <input type="checkbox" class="checkbox" value="Checkbox 4" id="checkbox4" onchange="toggleDiv()" />
+            <span> Checkbox 4</span>
+        </div>
+        <div> <input type="checkbox" class="checkbox" value="Checkbox 5" id="checkbox5" onchange="toggleDiv()" />
+            <span> Checkbox 5</span>
+        </div>
+
+        </div>
+
+
+
+        <div class="image_1 text-center">
+            <img src="https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixlib=rb4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8Y29tcHV0ZXJ8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60"
+                class="rounded" alt="Responsive image">
+        </div>
+
+    </div>
+    <!-- PART 2 END -->
+
+    <!-- Part 3 and Part 4 |  Toggle : END -->
+    <!-- Part 3 : Start -->
+
+    <div id="divToShow" class="hidden">
+        <div class="part_3">
+            <div class="header">
+                <h5>
+                    Complete today’s worksheet by the end of the Learning Activity routine. Once you have
+                    finished working on today’s worksheet, take a picture of each page of your worksheet and
+                    paste them into the following yellow box.
+                </h5>
+            </div>
+
+
+            <!-- camear icon : start -->
+            <div class="cam_icon text-center">
+                <img src="./camera.svg" alt="">
+            </div>
+            <!-- camear icon : end -->
+
+
+            <section>
+                <div class="container" style="max-width:420px">
+                    <form id="files">
+                        <div class="submit hidden">
+                            <button class="btn primary">I'm done!</button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </div>
+        <!-- Part 3 : END -->
+
+
+        <!-- Part 4 : Start -->
+        <div class="part_4">
+
+            <div class="header">
+                <h5>Complete every task on this list by the end of the Check-Out routine. Once a task is
+                    completed, write a checkmark (☑️) inside the corresponding square.</h5>
+            </div>
+
+
+
+            <div id="checkboxes2">
+
+            <div> <input type="checkbox" class="checkbox-q3" value="Checkbox 6" id="checkbox6" onchange="toggleDiv()" />
+                <span> Checkbox 6</span>
+            </div>
+            <div> <input type="checkbox" class="checkbox-q3" value="Checkbox 7" id="checkbox7" onchange="toggleDiv()" />
+                <span> Checkbox 7</span>
+            </div>
+            <div> <input type="checkbox" class="checkbox-q3" value="Checkbox 8" id="checkbox8" onchange="toggleDiv()" />
+                <span> Checkbox 8</span>
+            </div>
+
+
+</div>
+
+
+
+            <div class="image_2 text-center ">
+                <img src="https://images.unsplash.com/photo-1478198697312-304b0bd9475f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGRlc2slMjBvcmdhbml6ZXJ8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60"
+                    class="rounded" alt="Responsive image">
+                </div">
+            </div>
+        </div>
+        <!-- Part 4 : END -->
+
+        <!-- Part 3 and Part 4 |  Toggle : END -->
+
+
+
+
+        
+        <!-- Part 5 : Start -->
+        <div id="part_5">
+            <div class="submit text-center">
+                <h5>Click on the button below to submit this packet.</h5>
+            </div>
+
+
+            <!-- <div class="button text-center">
+                <button type="submit" class="bt">Submit</button>
+            </div> -->
+
+<div class="su text-center">
+    
+    <button class="bt" id="submitBtn text-center" onclick="submitForm()">Submit</button>
+
+    <div id="result"></div>
+  
+    <script>
+      document.addEventListener('change', checkAllCheckboxes);
+    </script>
+
+</div>
+
+
+
+
+        </div>
+        <!-- Part 5 : End -->
+
+
+
+
+
+
+
+
+        <script src="./script.js"></script>
+
+        <script>
+            const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+            const part5 = document.getElementById('part_5');
+
+            function handleCheckboxChange() {
+                const checkbox6 = document.getElementById('checkbox6');
+                const checkbox7 = document.getElementById('checkbox7');
+                const checkbox8 = document.getElementById('checkbox8');
+
+                if (checkbox6.checked && checkbox7.checked && checkbox8.checked) {
+                    part5.style.display = 'block';
+                } else {
+                    part5.style.display = 'none';
+                }
+            }
+
+            checkboxes.forEach(function (checkbox) {
+                checkbox.addEventListener('change', handleCheckboxChange);
+            });
+        </script>
+
+
+
+
+
+
+
+
+        <!-- <div id="checkboxes1">
+            <input type="checkbox" name="checkbox1" value="Checkbox 1"> Checkbox 1<br>
+            <input type="checkbox" name="checkbox2" value="Checkbox 2"> Checkbox 2<br>
+            <input type="checkbox" name="checkbox3" value="Checkbox 3"> Checkbox 3<br>
+            <input type="checkbox" name="checkbox4" value="Checkbox 4"> Checkbox 4<br>
+            <input type="checkbox" name="checkbox5" value="Checkbox 5"> Checkbox 5<br>
+          </div>
+  
+  
+  
+  
+  
+    <div id="checkboxes2">
+      <input type="checkbox" name="checkbox6" value="Checkbox 6"> Checkbox 6<br>
+      <input type="checkbox" name="checkbox7" value="Checkbox 7"> Checkbox 7<br>
+      <input type="checkbox" name="checkbox8" value="Checkbox 8"> Checkbox 8<br>
+    </div> -->
+
+
+
+
+
+<!-- <div class="su text-center">
+
+    <button class="bt" id="submitBtn text-center" onclick="submitForm()">Submit</button>
+
+    <div id="result"></div>
+  
+    <script>
+      document.addEventListener('change', checkAllCheckboxes);
+    </script>
+
+</div> -->
+
+
+
+      
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
